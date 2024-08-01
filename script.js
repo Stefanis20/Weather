@@ -1,4 +1,4 @@
-const apiKey = 'e67216cd91c76ea11a1fdecff85eccc6';
+const apiKey = ''; // Εδώ Χρησιμοποιάτε το δικό σας API Key για να μπρεί να σας εμφανίσει τα δεδομένα
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const locationInput = document.getElementById('locationInput');
