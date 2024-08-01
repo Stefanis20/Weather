@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="icon" href="Loco-Weather.png" type="image/png">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-card">
+            <div class="weather-info">
+                <div class="temperature" id="temperature">--°C</div>
+                <div class="location-details">
+                    <span class="location" id="location">Loading...</span>
+                </div>
+                <div class="weather-description" id="description">Awaiting data...</div>
+                <div class="additional-info" id="additional-info">
+                    <span id="humidity">Humidity: --%</span>
+                    <span id="wind">Wind: -- m/s</span>
+                </div>
+            </div>
+            <div class="search-area">
+                <input type="text" id="locationInput" placeholder="Search here">
+                <button id="searchButton">Search</button>
+
+                <div class="country-buttons">
+                    <button class="country-btn" data-country="Cyprus">Cyprus</button>
+                    <button class="country-btn" data-country="Athens">Athens</button>
+                    <button class="country-btn" data-country="New York">New York</button>
+                    <button class="country-btn" data-country="Tokyo">Tokyo</button>
+                </div>
+
+                <!-- Προσθήκη κουμπιών για την επιλογή στρώσεων -->
+                <div class="layer-buttons">
+                    <button class="layer-btn" data-layer="temp">Temperature</button>
+                    <button class="layer-btn" data-layer="precipitation">Rainfall</button>
+                    <button class="layer-btn" data-layer="wind">Wind</button>
+                </div>
+            </div>
+        </div>
+        <div id="map-container" style="width: 100%; height: 400px;"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
